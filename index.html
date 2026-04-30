@@ -26,13 +26,8 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavbar">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center gap-2" href="#hero">
-                <div class="brand-icon">
-                    <i class="bi bi-truck-front-fill"></i>
-                </div>
-                <div>
-                    <span class="brand-title">ZİRVE</span>
-                    <span class="brand-sub d-block">TAŞIMACILIK</span>
-                </div>
+                <img src="img/zirve logo.png" alt="Zirve Taşımacılık Logo" class="navbar-logo" />
+                <span class="brand-title" style="color: var(--primary);">TAŞIMACILIK</span>
             </a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
                 <span class="navbar-toggler-icon"></span>
@@ -45,8 +40,8 @@
                     <li class="nav-item"><a class="nav-link" href="#galeri">Galeri</a></li>
                     <li class="nav-item"><a class="nav-link" href="#iletisim">İletişim</a></li>
                     <li class="nav-item ms-lg-3">
-                        <a class="btn btn-primary-custom" href="tel:+905000000000">
-                            <i class="bi bi-telephone-fill me-1"></i> Hemen Ar
+                        <a class="btn btn-primary-custom" href="tel:+905518331423">
+                            <i class="bi bi-telephone-fill me-1"></i> Hemen Ara
                         </a>
                     </li>
                 </ul>
@@ -56,9 +51,9 @@
 
     <!-- ===================== HERO ===================== -->
     <section id="hero" class="hero-section">
-        <div class="hero-overlay"></div>
+        <!-- Background carousel -->
         <div id="heroCarousel" class="carousel slide carousel-fade hero-carousel" data-bs-ride="carousel"
-            data-bs-interval="4500">
+            data-bs-interval="5000">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="img/zirvearkaplan.png" class="d-block w-100 hero-img" alt="Zirve Taşımacılık Filo" />
@@ -74,44 +69,73 @@
                 </div>
             </div>
         </div>
-        <div class="hero-content container text-center">
-            <div class="hero-badge mb-3">
-                <i class="bi bi-shield-check-fill me-2"></i>Güvenli & Konforlu Taşımacılık
-            </div>
-            <h1 class="hero-title">Afyonkarahisar'ın<br /><span class="accent-text">1 Numaralı</span><br />Taşımacılık
-                Çözümü</h1>
-            <p class="hero-subtitle">Servis ve işçi taşımacılığında yıllarca kazanılmış deneyimle, güvenli ve zamanında
-                ulaşım garantisi.</p>
-            <div class="d-flex flex-wrap gap-3 justify-content-center mt-4">
-                <a href="#iletisim" class="btn btn-primary-custom btn-lg">
-                    <i class="bi bi-envelope-fill me-2"></i>Teklif Al
-                </a>
-                <a href="#hizmetler" class="btn btn-outline-light btn-lg">
-                    <i class="bi bi-arrow-down-circle me-2"></i>Hizmetlerimiz
-                </a>
+
+        <!-- Layered overlays -->
+        <div class="hero-overlay"></div>
+        <div class="hero-glow-1"></div>
+        <div class="hero-glow-2"></div>
+
+        <!-- Content -->
+        <div class="hero-content container">
+            <div class="row align-items-center min-vh-100 py-5">
+                <div class="col-lg-7 text-white hero-left">
+                    <!-- Badge -->
+                    <div class="hero-badge mb-4">
+                        <span class="hero-badge-dot"></span>
+                        <i class="bi bi-shield-check-fill me-2"></i>Güvenli &amp; Konforlu Taşımacılık
+                    </div>
+
+                    <!-- Headline -->
+                    <h1 class="hero-title">
+                        Afyonkarahisar'ın<br />
+                        <span class="hero-accent-line">
+                            <span class="accent-text">1 Numaralı</span>
+                        </span><br />
+                        Taşımacılık Çözümü
+                    </h1>
+
+                    <!-- Subtitle -->
+                    <p class="hero-subtitle">
+                        Servis ve işçi taşımacılığında yıllarca kazanılmış deneyimle,<br class="d-none d-md-block" />
+                        güvenli ve zamanında ulaşım garantisi.
+                    </p>
+
+                    <!-- CTAs -->
+                    <div class="d-flex flex-wrap gap-3 mt-5">
+                        <a href="#iletisim" class="btn btn-primary-custom btn-lg hero-cta-primary">
+                            <i class="bi bi-envelope-fill me-2"></i>Ücretsiz Teklif Al
+                        </a>
+                        <a href="#hizmetler" class="btn hero-cta-secondary btn-lg">
+                            <i class="bi bi-grid-fill me-2"></i>Hizmetlerimiz
+                        </a>
+                    </div>
+
+                    <!-- Trust row -->
+                    <div class="hero-trust-row mt-5 d-flex flex-wrap gap-3">
+                        <div class="hero-trust-item">
+                            <i class="bi bi-patch-check-fill"></i>
+                            <span>Lisanslı &amp; Sigortalı</span>
+                        </div>
+                        <div class="hero-trust-item">
+                            <i class="bi bi-pin-map-fill"></i>
+                            <span>GPS Takip Sistemi</span>
+                        </div>
+                        <div class="hero-trust-item">
+                            <i class="bi bi-headset"></i>
+                            <span>7/24 Destek</span>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
         </div>
-        <!-- Stats bar -->
-        <div class="hero-stats container">
-            <div class="row g-0 stats-row">
-                <div class="col-6 col-md-3 stat-item">
-                    <span class="stat-number" data-target="500">0</span><span class="stat-plus">+</span>
-                    <span class="stat-label">Araç Kapasitesi</span>
-                </div>
-                <div class="col-6 col-md-3 stat-item">
-                    <span class="stat-number" data-target="15">0</span><span class="stat-plus">+</span>
-                    <span class="stat-label">Yıllık Deneyim</span>
-                </div>
-                <div class="col-6 col-md-3 stat-item">
-                    <span class="stat-number" data-target="120">0</span><span class="stat-plus">+</span>
-                    <span class="stat-label">Kurumsal Müşteri</span>
-                </div>
-                <div class="col-6 col-md-3 stat-item">
-                    <span class="stat-number" data-target="99">0</span><span class="stat-plus">%</span>
-                    <span class="stat-label">Memnuniyet Oranı</span>
-                </div>
-            </div>
-        </div>
+
+        <!-- Scroll indicator -->
+        <a href="#hizmetler" class="hero-scroll-indicator">
+            <span></span>
+        </a>
+
     </section>
 
     <!-- ===================== HİZMETLER ===================== -->
@@ -155,21 +179,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card h-100">
-                        <div class="service-icon-wrap">
-                            <i class="bi bi-building-fill"></i>
-                        </div>
-                        <h3 class="service-title">Okul Servisi</h3>
-                        <p class="service-desc">Öğrencilerinizin güvenliği için bakımlı araçlar, deneyimli sürücüler ve
-                            veli takip sistemiyle okul servis hizmeti.</p>
-                        <ul class="service-list">
-                            <li><i class="bi bi-check-circle-fill text-accent me-2"></i>Veli Bildirim Sistemi</li>
-                            <li><i class="bi bi-check-circle-fill text-accent me-2"></i>Klimalı Araçlar</li>
-                            <li><i class="bi bi-check-circle-fill text-accent me-2"></i>Sigortalı Taşımacılık</li>
-                        </ul>
-                    </div>
-                </div>
+
                 <div class="col-md-6 col-lg-4">
                     <div class="service-card h-100">
                         <div class="service-icon-wrap">
@@ -303,13 +313,7 @@
                         <p>Klimalı, geniş ve bakımlı araç filomuzla yolcularınıza üst düzey konfor sunuyoruz.</p>
                     </div>
                 </div>
-                <div class="col-sm-6 col-lg-3">
-                    <div class="why-card text-center">
-                        <div class="why-icon"><i class="bi bi-currency-dollar"></i></div>
-                        <h5>Uygun Fiyat</h5>
-                        <p>Kaliteli hizmeti uygun fiyatlarla sunuyoruz. Kurumsal fatura ve sözleşme imkânı.</p>
-                    </div>
-                </div>
+
                 <div class="col-sm-6 col-lg-3">
                     <div class="why-card text-center">
                         <div class="why-icon"><i class="bi bi-phone-fill"></i></div>
@@ -374,25 +378,7 @@
         </div>
     </section>
 
-    <!-- ===================== REFERANSLAR ===================== -->
-    <section class="section-pad cta-section">
-        <div class="container text-center">
-            <div class="cta-box">
-                <div class="cta-icon-wrap mb-3"><i class="bi bi-truck-front-fill"></i></div>
-                <h2 class="cta-title">Hemen Teklif Alın!</h2>
-                <p class="cta-desc">İşçi ve personel taşıma ihtiyaçlarınız için size özel en uygun fiyatı sunuyoruz.
-                    Hemen arayın veya WhatsApp'tan yazın.</p>
-                <div class="d-flex flex-wrap gap-3 justify-content-center">
-                    <a href="tel:+905000000000" class="btn btn-light btn-lg px-4">
-                        <i class="bi bi-telephone-fill me-2 text-primary"></i>0 551 833 14 23
-                    </a>
-                    <a href="https://wa.me/905000000000" target="_blank" class="btn btn-success btn-lg px-4">
-                        <i class="bi bi-whatsapp me-2"></i>WhatsApp
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+
 
     <!-- ===================== İLETİŞİM ===================== -->
     <section id="iletisim" class="section-pad bg-light-custom">
@@ -410,14 +396,14 @@
                             <div class="ci-icon"><i class="bi bi-geo-alt-fill"></i></div>
                             <div>
                                 <h6>Adres</h6>
-                                <p>Dumlupınar mahallesi halilaga caddesi manolya apt no:3</p>
+                                <p>Dumlupınar Mahallesi Halilaga Caddesi Manolya Apt No:3</p>
                             </div>
                         </div>
                         <div class="contact-info-item">
                             <div class="ci-icon"><i class="bi bi-telephone-fill"></i></div>
                             <div>
                                 <h6>Telefon</h6>
-                                <p><a href="tel:+905000000000">0 551 833 14 23</a></p>
+                                <p><a href="tel:+905518331423">0 551 833 14 23</a></p>
                             </div>
                         </div>
                         <div class="contact-info-item">
@@ -438,7 +424,7 @@
                     <div class="social-bar mt-4 d-flex gap-3">
                         <a href="#" class="social-btn"><i class="bi bi-facebook"></i></a>
                         <a href="#" class="social-btn"><i class="bi bi-instagram"></i></a>
-                        <a href="https://wa.me/905000000000" class="social-btn whatsapp"><i
+                        <a href="https://wa.me/905518331423" class="social-btn whatsapp"><i
                                 class="bi bi-whatsapp"></i></a>
                     </div>
                 </div>
@@ -465,7 +451,6 @@
                                     <option value="">Seçiniz...</option>
                                     <option>İşçi Taşımacılığı</option>
                                     <option>Kurumsal Servis</option>
-                                    <option>Okul Servisi</option>
                                     <option>Etkinlik Transferi</option>
                                     <option>Havalimanı Transferi</option>
                                     <option>Şehirlerarası Taşıma</option>
@@ -524,14 +509,14 @@
                 <div class="col-sm-6 col-lg-4">
                     <h6 class="footer-heading">İletişim</h6>
                     <ul class="footer-links">
-                        <li><i class="bi bi-telephone me-2"></i>0500 000 00 00</li>
+                        <li><i class="bi bi-telephone me-2"></i>05462998979</li>
                         <li><i class="bi bi-envelope me-2"></i>info@zirvetasimacilık.com</li>
                         <li><i class="bi bi-geo-alt me-2"></i>Afyonkarahisar, Türkiye</li>
                     </ul>
                     <div class="social-bar mt-3 d-flex gap-2">
                         <a href="#" class="social-btn"><i class="bi bi-facebook"></i></a>
                         <a href="#" class="social-btn"><i class="bi bi-instagram"></i></a>
-                        <a href="https://wa.me/905000000000" class="social-btn whatsapp"><i
+                        <a href="https://wa.me/905462998979" class="social-btn whatsapp"><i
                                 class="bi bi-whatsapp"></i></a>
                     </div>
                 </div>
